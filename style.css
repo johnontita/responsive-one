@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.header{
+    background-color: azure;
+    padding: 20px;
+    text-align: center;
+    }
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    /* padding: 14px 16px; */
+    padding: 30px;
+    font-size: 20px;
+    text-decoration: none;
+    }
+.topnav a:hover{
+    background-color:#ddd ;
+    color: black;
+}
+.column{
+    float: left;
+    width: 33.33%;
+    /* padding: 15px; */
+}
+/*clear columns */
+row::after{
+    content:"";
+    display: table;
+    clear: both;
+}
+/* responsive design by using media querry*/
+@media screen and (max-width:600px) {
+    .column{
+        width: 100%;
+    }
+}
